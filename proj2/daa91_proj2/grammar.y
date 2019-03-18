@@ -1,7 +1,6 @@
 %{
 #include  "proj2.h"
 #include  <stdio.h>
-#include "lex.yy.c"
 
   tree type_record, type_method, argtype, bractemp, type_tree; /* globals used to store treenode pointers */
 
@@ -591,3 +590,4 @@ yyerror(char *str)
   printf("yyerror: %s at line %d\n", str, yyline);
 }
 
+#include "lex.yy.c"
